@@ -1,0 +1,26 @@
+### post new measurement with EPOCH second timestamd
+POST http://localhost:8080/measurements
+Content-Type: application/json
+Accept: application/json
+
+{
+  "patientId": 1,
+  "sys": 140,
+  "dia": 90,
+  "pulse": 64,
+  "timestamp": 1765037976
+}
+
+
+### post new measurement with ISO-like timestamp
+POST http://localhost:8080/measurements
+Content-Type: application/json
+Accept: application/json
+
+{
+  "patientId": 1,
+  "sys": 129,
+  "dia": 92,
+  "pulse": 62,
+  "timestamp": "2025-12-06T12:00:01+02:00"
+}
