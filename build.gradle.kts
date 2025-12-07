@@ -9,6 +9,10 @@ group = "com.evondos"
 version = "0.0.1-SNAPSHOT"
 description = "Test task for Evondos"
 
+springBoot {
+	mainClass.set("com.evondos.swe_task.SweTaskApplicationKt")
+}
+
 java {
 	toolchain {
 		languageVersion = JavaLanguageVersion.of(21)
@@ -29,6 +33,7 @@ dependencies {
 	implementation("org.jetbrains.kotlinx:kotlinx-coroutines-reactor")
 	implementation("org.springframework:spring-jdbc")
 	implementation("tools.jackson.module:jackson-module-kotlin:3.0.+")
+	implementation("org.springdoc:springdoc-openapi-starter-webflux-ui:2.8.14")
 	developmentOnly("org.springframework.boot:spring-boot-docker-compose")
 	runtimeOnly("org.postgresql:postgresql")
 	runtimeOnly("org.postgresql:r2dbc-postgresql")
