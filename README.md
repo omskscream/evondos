@@ -36,6 +36,7 @@ Of course this is not production-ready. Missing things include (but not limited 
 - proper javadocs (not really necessary for this small scale)
 - proper error handling (e.g. for duplicates (patientId, timestamp))
 - well-thought use cases (e.g. parameterize high pressure markers in SQL query)
+- CI/CD definitions and scripts
 - project structure might be a bit more thoroughly designed if service gets bigger
 
 Also check out attached mind board that I started the task with https://excalidraw.com/#json=gmj_5sM0p8Zoz_yTzywdi,aJ03f9xlZncGEO1OtCYIaQ
