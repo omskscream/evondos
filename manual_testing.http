@@ -24,3 +24,13 @@ Accept: application/json
   "pulse": 62,
   "timestamp": "2025-12-06T12:00:01+02:00"
 }
+
+
+### GET my patients
+GET http://localhost:8080/patients/my
+Accept: application/json
+
+
+### GET patients that need attention
+GET http://localhost:8080/patients/need-attention
+Accept: application/json
